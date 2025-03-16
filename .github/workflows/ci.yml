@@ -85,6 +85,18 @@ jobs:
           plugin_habits_charts: yes
           config_timezone: Europe/Paris
 
+      - name: JavaScript or TypeScript snippet of the day
+        uses: lowlighter/metrics@latest
+        with:
+          filename: metrics.plugin.code.svg
+          token: ${{ secrets.METRICS_TOKEN }}
+          base: ""
+          plugin_code: yes
+          plugin_code_languages: javascript, typescript, python
+          plugin_code_load: 400
+          plugin_code_visibility: all
+  
+
       # 8. 複製產生的 SVG 檔案並 commit
       - name: Copy and Commit Metrics
         env:
