@@ -109,6 +109,29 @@ jobs:
           plugin_music_provider: youtube
           plugin_music_limit: 5
 
+      - name: Favorites anime and currently watching
+        uses: lowlighter/metrics@latest
+        with:
+          filename: metrics.plugin.anilist.svg
+          token: NOT_NEEDED
+          base: ""
+          plugin_anilist: yes
+          plugin_anilist_user: ken22i
+          plugin_anilist_medias: anime
+          plugin_anilist_sections: favorites
+          plugin_anilist_limit: 3
+
+      - name: Favorites characters
+        uses: lowlighter/metrics@latest
+        with:
+          filename: metrics.plugin.anilist.characters.svg
+          token: NOT_NEEDED
+          base: ""
+          plugin_anilist: yes
+          plugin_anilist_user: ken22i
+          plugin_anilist_sections: characters
+          plugin_anilist_limit_characters: 22
+
       # 8. 複製產生的 SVG 檔案並 commit
       - name: Copy and Commit Metrics
         env:
