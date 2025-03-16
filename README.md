@@ -11,9 +11,10 @@
 [<img align="left" width="390" alt="Recently Code" src="https://raw.githubusercontent.com/ken22i/ken22i/main/metrics.plugin.code.svg">](#)
 
 [<img align="right" width="390" alt="language" src="https://raw.githubusercontent.com/ken22i/ken22i/main/metrics.plugin.languages.indepth.svg">](#)
-[<img align="right" width="390" alt="youtube" src="https://raw.githubusercontent.com/ken22i/ken22i/main/metrics.plugin.youtube.svg">](#)
+
 [<img align="left" width="390" alt="anilist" src="https://raw.githubusercontent.com/ken22i/ken22i/main/metrics.plugin.anilist.svg">](#)
 [<img align="left" width="390" alt="character" src="https://raw.githubusercontent.com/ken22i/ken22i/main/metrics.plugin.anilist.characters.svg">](#)
+[<img align="left" width="390" alt="youtube" src="https://raw.githubusercontent.com/ken22i/ken22i/main/metrics.plugin.youtube.svg">](#)
 
 
 
