@@ -9,6 +9,9 @@
 [<img align="left" width="390" alt="Coding Habits Facts" src="https://raw.githubusercontent.com/ken22i/ken22i/main/metrics.plugin.habits.facts.svg">](#)
 [<img align="right" width="390" alt="Coding Habits Charts" src="https://raw.githubusercontent.com/ken22i/ken22i/main/metrics.plugin.habits.charts.svg">](#)
 [<img align="left" width="390" alt="Recently Code" src="https://raw.githubusercontent.com/ken22i/ken22i/main/metrics.plugin.code.svg">](#)
+[<img align="right" width="390" alt="Recently Code" src="https://raw.githubusercontent.com/ken22i/ken22i/main/metrics.plugin.youtube.svg">](#)
+[<img align="left" width="390" alt="Recently Code" src="https://raw.githubusercontent.com/ken22i/ken22i/main/metrics.plugin.anilist.svg">](#)
+[<img align="left" width="390" alt="Recently Code" src="https://raw.githubusercontent.com/ken22i/ken22i/main/metrics.plugin.anilist.characters.svg">](#)
 
 
 
