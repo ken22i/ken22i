@@ -11,6 +11,8 @@ on:
 jobs:
   generate-metrics:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
     steps:
       # 1. 檢出你的 repository
       - name: Checkout Repository
