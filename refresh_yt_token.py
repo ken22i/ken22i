@@ -28,7 +28,7 @@ def get_yt_music_token():
     # 取得 performance logs
     logs = driver.get_log("performance")
     token = None
-
+    print(logs)
     # 解析每筆 log，篩選出含有 innertube 請求的項目
     for entry in logs:
         try:
