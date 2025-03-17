@@ -64,6 +64,16 @@ jobs:
       #     plugin_music_token: ${{ secrets.SPOTIFY_TOKENS }}
       #     plugin_music_limit: 2
 
+      - name: Recent activity
+        uses: lowlighter/metrics@latest
+        with:
+          filename: metrics.plugin.activity.svg
+          token: ${{ secrets.METRICS_TOKEN }}
+          base: ""
+          plugin_activity: yes
+          plugin_activity_limit: 5
+          plugin_activity_days: 0
+
       # 4. 生成 Terminal Template 圖片
       - name: Generate Terminal Template
         uses: lowlighter/metrics@latest
