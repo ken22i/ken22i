@@ -36,8 +36,8 @@ def get_yt_music_token():
             if "request" in message and "headers" in message["request"]:
                 headers = message["request"]["headers"]
                 # 此處以 "Authorization" 為例，實際請求可能不同
-                if "cookie" in headers:
-                    token = headers["cookie"]
+                if "Cookie" in headers:
+                    token = headers["Cookie"]
                     break
         except Exception as e:
             continue
