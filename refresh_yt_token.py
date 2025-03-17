@@ -51,4 +51,5 @@ if __name__ == '__main__':
         print(token)
     else:
         print("無法取得 token", file=sys.stderr)
+        print(logs)
         sys.exit(1)
