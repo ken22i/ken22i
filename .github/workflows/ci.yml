@@ -18,6 +18,30 @@ jobs:
       - name: Checkout Repository
         uses: actions/checkout@v3
 
+
+      # 安裝 Chromium 與 Chromedriver
+      - name: Install Chromium and Chromedriver
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y chromium-browser chromium-chromedriver
+
+      # 安裝 Python 相依套件
+      - name: Install Python Dependencies
+        run: pip install selenium
+
+      #  執行刷新 YouTube Music Token 的腳本，並將 token 存入 GitHub Actions output
+      - name: Refresh YouTube Music Token
+        id: refresh_yt_token
+        run: |
+          # 確保腳本有執行權限
+          chmod +x refresh_yt_token.py
+          # 執行腳本並將結果寫入變數 yt_token.txt
+          python3 refresh_yt_token.py > yt_token.txt
+          # 讀取 token 並設為 workflow output
+          yt_token=$(cat yt_token.txt)
+          echo "yt_token=${yt_token}" >> $GITHUB_OUTPUT
+
+          
       # 2. 生成 Isometric Commit Calendar（半年度版本）
       - name: Generate Isometric Commit Calendar
         uses: lowlighter/metrics@latest
@@ -103,7 +127,7 @@ jobs:
           filename: metrics.plugin.youtube.svg
           token: NOT_NEEDED
           base: ""
-          plugin_music_token: ${{ secrets.YOUTUBE_MUSIC_TOKENS }}
+          plugin_music_token: ${{ steps.refresh_yt_token.outputs.yt_token }}
           plugin_music: yes
           plugin_music_mode: recent
           plugin_music_provider: youtube
